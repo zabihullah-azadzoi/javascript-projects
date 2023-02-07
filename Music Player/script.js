@@ -17,23 +17,13 @@ let nextSong = 1;
 const songsInfo = [
   {
     name: "audio-1",
-    displayName: "Quraishi Janan",
+    displayName: "Chi ta raghli",
     singer: "Ahmad",
   },
   {
     name: "audio-2",
-    displayName: "Madina",
+    displayName: "Quraishi Janan",
     singer: "Mahmood",
-  },
-  {
-    name: "audio-3",
-    displayName: "Qurtobi Muslim",
-    singer: "Kalbi",
-  },
-  {
-    name: "audio-4",
-    displayName: "Chi Ta Raghli ",
-    singer: "Maqsood",
   },
 ];
 
@@ -63,7 +53,7 @@ function displayInfo(nextSong) {
 //next song
 function next() {
   nextSong++;
-  if (nextSong > 4) {
+  if (nextSong > 2) {
     nextSong = 1;
   }
   displayInfo(nextSong);
