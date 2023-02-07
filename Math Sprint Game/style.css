@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Barlow:wght@400;500;600&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Barlow", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background: #b3ffab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #12fff7,
+    #b3ffab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #12fff7,
+    #b3ffab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  height: 50rem;
+  width: 37rem;
+  background-color: rgba(255, 255, 255, 0.548);
+  box-shadow: 0 1rem 3rem 0.5rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.header {
+  text-align: center;
+  padding: 1.3rem 0;
+  font-size: 2.2rem;
+  letter-spacing: 0.3rem;
+  color: #fff;
+  background-color: rgb(0, 140, 255);
+  align-self: stretch;
+}
+.heading {
+  font-weight: 600;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questions-container {
+  width: 33rem;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border: solid black 0.1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+label {
+  width: 22rem;
+  font-size: 2rem;
+  cursor: pointer;
+  height: auto;
+}
+input {
+  visibility: hidden;
+}
+.checked {
+  background-color: rgb(111, 190, 255);
+}
+.scores {
+  text-align: center;
+}
+.button-container {
+  background-color: rgb(10, 11, 59);
+  height: 7rem;
+  align-self: stretch;
+  margin-top: 4rem;
+  width: 37rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 2rem;
+  width: 90%;
+  background-color: rgb(0, 140, 255);
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  background-color: rgb(37, 157, 255);
+}
+/* countdown page */
+.countdown {
+  height: 100%;
+  width: 100%;
+  color: rgb(13, 14, 53);
+  font-size: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+/* equation-page */
+.equations-page {
+  display: none;
+  position: relative;
+}
+.equations {
+  padding: 0 3rem;
+  height: 25rem;
+  margin-top: 5rem;
+  position: relative;
+  overflow-y: hidden;
+}
+.equation-paragraph:first-child {
+  margin-top: 10rem;
+}
+.equation-paragraph:last-child {
+  margin-bottom: 11rem;
+}
+.equation-paragraph {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+.button-wrong {
+  width: 40%;
+  margin-right: 2rem;
+  padding: 0.5rem 2rem;
+  background-color: rgb(255, 28, 28);
+}
+.button-wrong:hover {
+  background-color: rgb(185, 34, 34);
+}
+.button-right {
+  width: 40%;
+  padding: 0.5rem 2rem;
+  background-color: rgb(37, 189, 37);
+}
+.button-right:hover {
+  background-color: rgb(23, 131, 23);
+}
+.equation-highlighter {
+  height: 5rem;
+  width: 100%;
+  background-color: rgb(72, 197, 255);
+  position: absolute;
+  top: 14.5rem;
+}
+/* score-page */
+.score-page {
+  margin-top: 3rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Mono", monospace;
+  display: none;
+}
+.time-message {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+.total-time {
+  font-size: 8rem;
+  color: rgb(0, 214, 0);
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.base-time {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.penalty-time {
+  font-size: 1.8rem;
+  color: rgb(248, 43, 43);
+  font-weight: 500;
+}
+.start-again-button {
+  width: 80%;
+  text-align: center;
+  margin-top: 6rem;
+  padding: 0.6rem;
+  visibility: hidden;
+}
+
+/* Media Queries */
+
+/* @media screen and (max-width: 56.25rem) {
+  .container {
+    width: 33rem;
+  }
+  label {
+    width: 15rem;
+  }
+  .form {
+    justify-content: center;
+  }
+  .questions-container {
+    width: 31rem;
+  }
+  .button-container {
+    width: 33rem;
+  }
+  .equation-highlighter {
+    width: 33rem;
+    top: 30.5rem;
+  }
+}
+
+@media screen and (width: 375px) {
+  .equation-highlighter {
+    top: 38.5rem;
+  }
+} */

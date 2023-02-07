@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Custom Countdown || AfghanCoder</title>
+  </head>
+  <body>
+    <!-- video background -->
+    <div class="video-background">
+      <video class="video-element" loop muted autoplay>
+        <source src="./Hourglass - 26452.mp4" />
+      </video>
+    </div>
+    <!-- overlay -->
+    <div class="overlay"></div>
+    <div class="container">
+      <!-- date-picking -->
+      <div class="date-picker">
+        <h2 class="heading">Create a Custom Countdown</h2>
+        <form class="form" id="form" class="form">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            placeholder="What do you want to custom countdown to?"
+          />
+          <label for="date">Select a Date!</label>
+          <input type="date" id="date" />
+          <button type="submit" class="submit-button">Sumbit</button>
+        </form>
+      </div>
+      <!-- countdown page -->
+      <div class="countdown-page">
+        <h3 class="countdown-title"></h3>
+        <ul class="list">
+          <li class="item"><span></span>Day</li>
+          <li class="item"><span></span>Hours</li>
+          <li class="item"><span></span>Minutes</li>
+          <li class="item"><span></span>Seconds</li>
+        </ul>
+        <button class="submit-button reset-button">Reset</button>
+      </div>
+      <!-- complete page -->
+      <div class="complete-page">
+        <h1 class="complete-animation">Countdown Completed!</h1>
+        <h3 class="complete-message"></h3>
+        <button class="submit-button new-countdown-button">
+          New Countdown
+        </button>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="./script.js"></script>
+  </body>
+</html>

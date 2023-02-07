@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: #0f4c75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  padding: 0.5rem 2.2rem;
+  font-size: 2.2rem;
+  background-color: #bbe1fa;
+  color: #1b262c;
+  border: 0.6rem solid #1b262c;
+  border-radius: 0.7rem;
+  outline: black;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0.1rem 0.1rem 0.5rem grey;
+}
+.button:hover {
+  background-color: #5786a5;
+  color: #d1dde4;
+}
+.button:active {
+  transform: translateY(0.3rem);
+  box-shadow: 0.1rem 0.1rem 0.1rem grey;
+}
+.video {
+  height: 40rem;
+  width: 60rem;
+}

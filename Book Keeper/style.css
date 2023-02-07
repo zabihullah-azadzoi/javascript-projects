@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./watch-4638673_1920.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.329);
+  z-index: -100;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+.add-bookmark {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  margin-top: 3rem;
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: teal;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  background-color: rgb(35, 170, 170);
+}
+.button:active {
+  transform: translateY(0.3rem) scale(0.9);
+}
+.new-bookmark-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.514);
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.new-bookmark-page {
+  height: 28rem;
+  width: 50rem;
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+}
+.header {
+  height: 3rem;
+  background-color: rgb(153, 70, 22);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  font-size: 1.8rem;
+}
+.inputs {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+label {
+  margin-bottom: 0.5rem;
+}
+input {
+  margin-bottom: 2rem;
+  border: 0.1rem solid rgb(153, 70, 22);
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.3rem 1rem;
+}
+/* .bookmark-url:not(:valid) {
+  border: 0.1rem solid rgb(255, 0, 0);
+} */
+.submit-button {
+  width: 10rem;
+  margin-top: 1rem;
+  padding: 0.2rem 2rem;
+  background-color: rgb(153, 70, 22);
+}
+.submit-button:hover {
+  background-color: rgb(214, 108, 46);
+}
+.close-add-bookmark-button {
+  cursor: pointer;
+  user-select: none;
+}
+.all-bookmarks {
+  align-self: flex-start;
+  margin-left: 5rem;
+  margin-top: 5rem;
+}
+.item-label {
+  padding: 2rem 4rem;
+  background-color: rgba(153, 205, 50, 0.5);
+  margin-right: 4rem;
+  display: inline-block;
+  text-align: center;
+  font-size: 2.5rem;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.bookmark-delete-button {
+  width: 0.5rem;
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 0.774);
+  transform: translate(9rem, -1rem);
+  display: block;
+  user-select: none;
+  cursor: pointer;
+}
+.bookmark-delete-button:hover {
+  color: red;
+}
+@media screen and (max-width: 56.25rem) {
+  .item-label {
+    width: 90%;
+    padding: 1rem;
+  }
+  .all-bookmarks {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .bookmark-delete-button {
+    width: 0;
+    font-size: 2.2rem;
+    transform: translate(29rem, 0rem);
+  }
+  .new-bookmark-page {
+    width: 90%;
+  }
+}

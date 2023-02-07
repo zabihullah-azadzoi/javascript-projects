@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Book Keeper || AfghanCoder</title>
+  </head>
+  <body>
+    <!-- overlay -->
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="add-bookmark">
+        <button class="add-new-bookmark button">Add Bookmark</button>
+      </div>
+      <div class="all-bookmarks"></div>
+      <!-- new bookmark UI -->
+      <div class="new-bookmark-container">
+        <div class="new-bookmark-page">
+          <div class="header">
+            <span class="add-bookmark-title">Add Bookmark</span>
+            <span class="close-add-bookmark-button">X</span>
+          </div>
+          <div class="inputs">
+            <label for="bookmark-name">Website Name</label>
+            <input type="text" id="bookmark-name" class="bookmark-name" />
+            <label for="bookmark-url">Website URL</label>
+            <input type="url" id="bookmark-url" class="bookmark-url" />
+            <button id="submit-button" class="submit-button button">
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="./script.js"></script>
+  </body>
+</html>

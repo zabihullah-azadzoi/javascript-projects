@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-player {
+  height: 80%;
+  width: 70%;
+  position: relative;
+  border: solid 0.2rem black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.video {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.show-controls {
+  height: 10rem;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  /* align-items: flex-end; */
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: all 0.1s ease-in-out;
+}
+.controls {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  position: relative;
+  flex-direction: column;
+  height: 8rem;
+  cursor: default;
+}
+.show-controls:hover .controls {
+  visibility: visible;
+}
+.control-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.play-element {
+  margin-right: 2rem;
+  /* margin-left: 1rem; */
+}
+.first-controler,
+.second-controler {
+  font-size: 2rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+.playback-dropdown {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+}
+.fullscreen-button,
+.duration-controler {
+  margin-left: 2rem;
+  color: white;
+}
+.fas {
+  cursor: pointer;
+  color: white;
+}
+.fullscreen-button {
+  margin-right: 1rem;
+}
+.video-progressbar {
+  height: 0.4rem;
+  border-radius: 1rem;
+  width: 99%;
+  background-color: rgb(173, 172, 172);
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+}
+.video-progress-tracker {
+  height: 100%;
+  border-radius: 1rem;
+  width: 0%;
+  background-color: rgb(45, 119, 255);
+}
+.video-progressbar:hover {
+  height: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+.video-volumebar {
+  height: 0.4rem;
+  border-radius: 1rem;
+  width: 10rem;
+  background-color: rgb(173, 172, 172);
+  margin-left: 2rem;
+}
+.video-volume-tracker {
+  height: 100%;
+  border-radius: 1rem;
+  width: 0%;
+  background-color: rgb(45, 119, 255);
+  cursor: pointer;
+}
+.video-volumebar:hover {
+  height: 0.6rem;
+}

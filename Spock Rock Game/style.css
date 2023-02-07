@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Gayathri", sans-serif;
+}
+body {
+  width: 100vw;
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 35rem;
+  height: 40rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0rem 0.5rem 3rem 0.5rem rgba(0, 0, 0, 0.418);
+}
+.header {
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 2.5rem;
+  background-color: rgb(46, 137, 255);
+  color: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.heading {
+  letter-spacing: 0.1rem;
+  font-size: 1.9rem;
+}
+.user-container,
+.computer-container {
+  margin: 2rem 3rem 4rem;
+}
+.user-item {
+  color: rgb(46, 137, 255);
+  cursor: pointer;
+}
+.computer-item {
+  color: rgb(255, 0, 0);
+}
+.far {
+  font-size: 4rem;
+  user-select: none;
+}
+.far:not(:last-child) {
+  margin-right: 2rem;
+}
+p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.reset-container {
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+#reset-button {
+  cursor: pointer;
+}
+.message {
+  text-align: center;
+  font-size: 3rem;
+}
+.color-changer {
+  color: black;
+}

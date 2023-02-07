@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/bba5aab8be.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gayathri&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Spock Rock Game || AfghanCoder</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2 class="heading">Rock Paper Scissors Lizard Spock</h2>
+      </div>
+      <div class="user-container">
+        <p class="user-score"></p>
+        <i class="far fa-hand-rock user-rock user-item" id="rock"></i>
+        <i class="far fa-hand-paper user-paper user-item" id="paper"></i>
+        <i
+          class="far fa-hand-scissors user-scissors user-item"
+          id="scissors"
+        ></i>
+        <i class="far fa-hand-lizard user-lizard user-item" id="lizard"></i>
+        <i class="far fa-hand-spock user-spock user-item" id="spock"></i>
+      </div>
+      <div class="computer-container">
+        <p class="computer-score"></p>
+        <i class="far fa-hand-rock computer-rock computer-item"></i>
+        <i class="far fa-hand-paper computer-paper computer-item"></i>
+        <i class="far fa-hand-scissors computer-scissors computer-item"></i>
+        <i class="far fa-hand-lizard computer-lizard computer-item"></i>
+        <i class="far fa-hand-spock computer-spock computer-item"></i>
+      </div>
+      <div class="reset-container">
+        <i class="fas fa-sync-alt" id="reset-button"></i>
+      </div>
+      <p class="message"></p>
+    </div>
+    <!-- scripts -->
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

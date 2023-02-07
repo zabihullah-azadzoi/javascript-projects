@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(1, 129, 204),
+    rgb(0, 45, 71)
+  );
+}
+.container {
+  width: 40rem;
+}
+.textarea {
+  font-size: 4rem;
+  padding: 0 1rem;
+  padding-top: 1rem;
+  height: 8rem;
+  border: none;
+  outline: none;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  direction: rtl;
+  width: 100%;
+  color: white;
+  background-color: rgb(0, 16, 34);
+  cursor: default;
+  user-select: none;
+  word-wrap: normal;
+  overflow-y: hidden;
+}
+.buttons {
+  margin-top: -0.4rem;
+  background-color: white;
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+button {
+  font-size: 2rem;
+  padding: 1rem 0rem;
+  border: none;
+  border-radius: 0.6rem;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.01s ease-in-out;
+}
+button:active {
+  transform: translateY(0.2rem) scale(0.99);
+}
+.equal {
+  grid-column: 4 / 5;
+  grid-row: 2 / 6;
+}
+.operation {
+  background-color: rgb(160, 158, 158);
+}
+.number {
+  background-color: rgb(228, 228, 228);
+}
+.reset {
+  background-color: rgb(255, 0, 0);
+}
+.equal {
+  background-color: rgb(0, 199, 0);
+}
+
+/* media queries */
+@media screen and (max-width: 56.25rem) {
+  .container {
+    width: 35rem;
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/bba5aab8be.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./search.png" type="image/png" />
+    <title>Music Player || AfghanCoder</title>
+  </head>
+  <body>
+    <!-- general container -->
+    <div class="player-container">
+      <div class="image-container">
+        <img src="./img/image-1.jpg" alt="image" id="song-image" />
+        <audio src="./audio/audio-1.mp3" controls class="audio" hidden></audio>
+      </div>
+
+      <!-- title-songName container -->
+      <div class="info-container">
+        <p class="audio-name">Quraishi Muslim</p>
+        <p class="singer-name">Ahmad</p>
+      </div>
+      <!-- progress bar -->
+      <div class="progress-info">
+        <div class="start-end-info">
+          <span class="progress-update">0:00</span>
+          <span class="progress-end">6:35</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-progressing"></div>
+        </div>
+      </div>
+      <!-- control buttons -->
+      <div class="control-buttons">
+        <i class="fas fa-backward" id="previous" title="Previous"></i>
+        <i class="fas fa-play" id="play" title="Play/Pause"></i>
+        <i class="fas fa-forward" id="next" title="Next"></i>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="./script.js"></script>
+  </body>
+</html>

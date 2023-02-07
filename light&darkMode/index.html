@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans+Condensed:wght@300&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bba5aab8be.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./toggle.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Light & Dark Mode || AfghanCoder</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="menu">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      <div class="mode-status">
+        <span class="span">Light Mode</span>
+        <i class="fas fa-sun" id="mode-icon"></i>
+        <!-- Rounded switch -->
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </nav>
+    <section id="home">
+      <h1 class="primary-heading">custom title here</h1>
+      <h2 class="secondary-heading">Wellcome to our website</h2>
+    </section>
+    <section id="about">
+      <h3>Explore world with us!</h3>
+      <div class="general-container">
+        <div class="items-container">
+          <h4>you can win!</h4>
+          <img
+            class="image"
+            id="image-1"
+            src="./img/first-light.svg"
+            alt="first light"
+          />
+        </div>
+
+        <div class="items-container">
+          <h4>Think Big</h4>
+          <img
+            class="image"
+            id="image-2"
+            src="./img/second-light.svg"
+            alt="first light"
+          />
+        </div>
+
+        <div class="items-container">
+          <h4>Don't be sheep</h4>
+          <img
+            class="image"
+            id="image-3"
+            src="./img/third-light.svg"
+            alt="first light"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h3 class="button-heading">Buttons</h3>
+      <div class="buttons">
+        <button class="primary">primary</button>
+        <button class="secondary">secondary</button>
+        <button class="outline">ouline</button>
+        <button class="inline">inline</button>
+      </div>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sunt quis?
+        Corporis, ullam libero. Recusandae voluptates laboriosam repellendus, et
+        autem doloribus tempore, dolorem accusantium natus incidunt dicta vel
+        mollitia eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Consectetur.
+      </p>
+    </section>
+    <section id="contact">
+      <i class="contact-image fab fa-github"></i>
+      <i class="contact-image fab fa-facebook"></i>
+      <i class="contact-image fab fa-instagram"></i>
+      <i class="contact-image fab fa-twitter-square"></i>
+      <i class="contact-image fab fa-youtube"></i>
+    </section>
+    <!-- script -->
+    <script src="./script.js"></script>
+  </body>
+</html>

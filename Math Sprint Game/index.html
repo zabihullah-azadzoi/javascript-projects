@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Math Spring Game || AfghanCoder</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2 class="heading">Math Spring Game</h2>
+      </div>
+      <!-- splash Page -->
+      <form class="form" id="form">
+        <div class="questions-container 10-questions">
+          <label class="quantity" for="10-questions">10 Questions</label>
+          <input
+            type="radio"
+            class="10-questions"
+            value="10"
+            id="10-questions"
+            name="radio"
+          />
+          <div class="scores">
+            <p class="score-text">Best Score</p>
+            <p class="score-number">0.0s</p>
+          </div>
+        </div>
+        <div class="questions-container 25-questions">
+          <label class="quantity" for="25-questions">25 Questions</label>
+          <input
+            type="radio"
+            class="25-questions"
+            value="25"
+            id="25-questions"
+            name="radio"
+          />
+          <div class="scores">
+            <p class="score-text">Best Score</p>
+            <p class="score-number">0.0s</p>
+          </div>
+        </div>
+        <div class="questions-container 50-questions">
+          <label class="quantity" for="50-questions">50 Questions</label>
+          <input
+            type="radio"
+            class="50-questions"
+            value="50"
+            id="50-questions"
+            name="radio"
+          />
+          <div class="scores">
+            <p class="score-text">Best Score</p>
+            <p class="score-number">0.0s</p>
+          </div>
+        </div>
+        <div class="questions-container 99-questions">
+          <label class="quantity" for="99-questions">99 Questions</label>
+          <input
+            type="radio"
+            class="99-questions"
+            value="99"
+            id="99-questions"
+            name="radio"
+          />
+          <div class="scores">
+            <p class="score-text">Best Score</p>
+            <p class="score-number">0.0s</p>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="button form-submit">Start Round</button>
+        </div>
+      </form>
+      <!-- countdown page -->
+      <div class="countdown"></div>
+      <!-- equations page -->
+      <div class="equations-page">
+        <div class="equation-highlighter"></div>
+        <div class="equations"></div>
+        <div class="button-container">
+          <button class="button button-wrong">Wrong</button>
+          <button class="button button-right">Right</button>
+        </div>
+      </div>
+      <!-- score-page -->
+      <div class="score-page">
+        <p class="time-message">Your Time</p>
+        <p class="total-time"></p>
+        <p class="base-time"></p>
+        <p class="penalty-time"></p>
+        <div class="button start-again-button">Start Again</div>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="./shuffleArray.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

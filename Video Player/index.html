@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/bba5aab8be.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Video Player || AfghanCoder</title>
+  </head>
+  <body>
+    <div class="video-player">
+      <video class="video">
+        <source src="./Bullfinch - 2797.mp4" />
+      </video>
+      <div class="show-controls">
+        <div class="controls">
+          <div class="video-progressbar">
+            <div class="video-progress-tracker"></div>
+          </div>
+          <div class="control-buttons">
+            <div class="first-controler">
+              <i class="fas fa-play play-element"></i>
+              <i class="fas fa-volume-up mute-element"></i>
+              <div class="video-volumebar">
+                <div class="video-volume-tracker"></div>
+              </div>
+            </div>
+            <div class="second-controler">
+              <select class="playback-dropdown">
+                <option value="smallest">0.5x</option>
+                <option value="small">0.75x</option>
+                <option value="normal">1x</option>
+                <option value="large">1.5x</option>
+                <option value="largest">2x</option>
+              </select>
+              <span class="duration-controler">0:00/00:0</span>
+              <i class="fas fa-expand fullscreen-button"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="./script.js"></script>
+  </body>
+</html>

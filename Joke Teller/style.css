@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.gif {
+  background: url("./gie.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  height: 60rem;
+  width: 60rem;
+}
+.button {
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  padding: 1rem 3rem;
+  background-color: rgb(9, 51, 70);
+  border: none;
+  font-size: 2rem;
+  color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  backface-visibility: hidden;
+  outline: none;
+}
+.button:hover {
+  filter: brightness(90%);
+}
+.button:active {
+  transform: translateY(0.1rem);
+}
+
+@media screen and (max-width: 56.25rem) {
+  .button {
+    top: 70%;
+    left: 50%;
+  }
+}
